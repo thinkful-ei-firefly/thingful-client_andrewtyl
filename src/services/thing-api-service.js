@@ -5,7 +5,7 @@ const ThingApiService = {
   getThings() {
     return fetch(`${config.API_ENDPOINT}/things`, {
       headers: {
-        'authorization': `basic ${TokenService.getAuthToken()}`,
+
       },
     })
       .then(res =>
